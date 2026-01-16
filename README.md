@@ -32,6 +32,11 @@ pnpm dev
 # or
 bun dev
 ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 **Troubleshooting** <br>
 If you are using a Windows device, you may run into the following issue;
@@ -41,14 +46,8 @@ npm : File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scri
 At line:1 char:1 + npm run dev + ~~~ + CategoryInfo : SecurityError: (:) [], PSSecurityException + FullyQualifiedErrorId : UnauthorizedAccess
 ```
 * If you get this error or something like it, your issue arises from the current user's `ExecutionPolicy`; either this is undefined or we have not permitted such scripts to run. <br>
- ** Common fixes may tell you to set modify this attribute; **do not do this, especially if you are going to set it to unrestriced!** This will open up your system to several 
-
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ * Common fixes may tell you to set modify this attribute; **do not do this, especially if you are going to set it to unrestriced!** This will open up your system to policy execution from any bad actors! <br><br>
+ Check to make sure that you are working in the correct directory `...\cssu.ca` and that `npm` is installed. If this still occurs, you open up PowerShell in **Administrator Mode** and type `Set-ExecutionPolicy RemoteSigned`, which lets locally created scripts run.
 
 ## Learn More
 

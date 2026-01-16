@@ -365,16 +365,3 @@ table th:not([align]) {
     @apply w-full m-0;
   }
 }
-
-/* new styling for hyperlinks on information pages*/ 
-.information-page p a {
-  color: #60a5fa; /* blue-400 */
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-}
-
-.information-page p a:hover {
-  color: #3b82f6; /* blue-500 */
-}

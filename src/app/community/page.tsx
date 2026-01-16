@@ -7,7 +7,7 @@ const frontMatter = {
   title: "Community",
   date: "2024-06-21",
   hideLastModified: false,
-  lastModified: "2024-06-21",
+  lastModified: "2026-01-16",
   summary: "CS-related clubs and student groups.",
 };
 
@@ -32,7 +32,7 @@ export default function Community() {
           website="https://assu.ca/wp"
           linkedin="https://www.linkedin.com/company/uoft-assu"
           instagram="https://www.instagram.com/assu_uoft/"
-          imageUrl="/rcgs/assu.jpg"
+          imageUrl="/rcgs/assu.webp"
         />
         <ProfileCard
           fullName="BCBSA"
@@ -40,7 +40,7 @@ export default function Community() {
           website="https://linktr.ee/bcbsa.uoft"
           github="https://github.com/bcbuoft"
           instagram="https://www.instagram.com/bcbsa.uoft/"
-          imageUrl="/rcgs/bcbsa.jpg"
+          imageUrl="/rcgs/bcbsa.webp"
         />
         <ProfileCard
           fullName="CSSU"
@@ -56,14 +56,14 @@ export default function Community() {
           website="https://web.cs.toronto.edu"
           linkedin="https://www.linkedin.com/school/uoftcompsci/"
           instagram="https://www.instagram.com/uoftcompsci/"
-          imageUrl="/rcgs/dcs.jpg"
+          imageUrl="/rcgs/dcs.webp"
         />
         <ProfileCard
           fullName="DCSIL"
           position="Department of Computer Science Innovation Lab"
           website="https://dcsil.ca"
           github="https://github.com/dcsil"
-          imageUrl="/rcgs/dcsil.png"
+          imageUrl="/rcgs/dcsil.webp"
         />
       </ProfileContainer>
 
@@ -109,7 +109,7 @@ export default function Community() {
           position="UofT Application Development Association"
           website="https://uoftada.com"
           linkedin="https://www.linkedin.com/company/university-of-toronto-application-development-association"
-          imageUrl="/rcgs/utada.png"
+          imageUrl="/rcgs/utada.webp"
         />
         <ProfileCard
           fullName="UofT AI"
@@ -118,7 +118,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/uaig-uoft/"
           github="https://github.com/uoftai"
           instagram="https://www.instagram.com/uoftaigroup/"
-          imageUrl="/rcgs/uoft_ai.jpeg"
+          imageUrl="/rcgs/uoft_ai.webp"
         />
         <ProfileCard
           fullName="aUToronto"
@@ -126,7 +126,7 @@ export default function Community() {
           website="https://www.autodrive.utoronto.ca"
           linkedin="https://www.linkedin.com/company/autoronto/"
           instagram="https://www.instagram.com/uoftautodrive/"
-          imageUrl="/rcgs/aUtoronto.jpeg"
+          imageUrl="/rcgs/aUtoronto.webp"
         />
         <ProfileCard
           fullName="UofT Blueprint"
@@ -134,7 +134,7 @@ export default function Community() {
           website="https://uoftblueprint.org/"
           linkedin="https://www.linkedin.com/company/uoftblueprint/"
           instagram="https://www.instagram.com/uoftblueprint/"
-          imageUrl="/rcgs/uoftblueprint.jpeg"
+          imageUrl="/rcgs/uoftblueprint.webp"
         />
         <ProfileCard
           fullName="UofTCTF"
@@ -142,7 +142,7 @@ export default function Community() {
           website="https://uoftctf.org/"
           github="https://github.com/UofTCTF"
           instagram="https://www.instagram.com/uoftctf/"
-          imageUrl="/rcgs/uoftctf.png"
+          imageUrl="/rcgs/uoftctf.webp"
         />
         <ProfileCard
           fullName="UTCG"
@@ -151,7 +151,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/university-of-toronto-computer-graphics-club"
           github="https://github.com/UTCG"
           instagram="https://www.instagram.com/utcomputergraphics/"
-          imageUrl="/rcgs/utcg.png"
+          imageUrl="/rcgs/utcg.webp"
         />
         <ProfileCard
           fullName="CSSA"
@@ -159,7 +159,7 @@ export default function Community() {
           website="https://cssa.sa.utoronto.ca/"
           linkedin="https://www.linkedin.com/company/uoftcssa/about/"
           instagram="https://www.instagram.com/uoftcssa/"
-          imageUrl="/rcgs/cssa.jpg"
+          imageUrl="/rcgs/cssa.webp"
         />
         <ProfileCard
           fullName="DSC UTSG"
@@ -168,7 +168,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/dscutsg"
           github="https://github.com/Developer-Student-Club-UofT"
           instagram="https://www.instagram.com/gdscutsg/"
-          imageUrl="/rcgs/dsc_utsg.png"
+          imageUrl="/rcgs/dsc_utsg.webp"
         />
         <ProfileCard
           fullName="UTGDDC"
@@ -176,7 +176,7 @@ export default function Community() {
           website="https://www.utgddc.com/"
           linkedin="https://www.linkedin.com/company/u-of-t-game-design-design-and-development-club"
           instagram="https://www.instagram.com/uoftgddc/"
-          imageUrl="/rcgs/gddc.jpg"
+          imageUrl="/rcgs/gddc.webp"
         />
         <ProfileCard
           fullName="UofT Hacks"
@@ -184,7 +184,7 @@ export default function Community() {
           website="https://uofthacks.com/"
           linkedin="https://www.linkedin.com/company/uoftorontohacks"
           instagram="https://www.instagram.com/uofthacks/"
-          imageUrl="/rcgs/uofthacks.png"
+          imageUrl="/rcgs/uofthacks.webp"
         />
         <ProfileCard
           fullName="UTMIST"
@@ -193,7 +193,7 @@ export default function Community() {
           linkedin="https://linkedin.com/company/utmist"
           github="https://github.com/UTMIST"
           instagram="https://www.instagram.com/uoft_utmist/"
-          imageUrl="/rcgs/utmist.png"
+          imageUrl="/rcgs/utmist.webp"
         />
         <ProfileCard
           fullName="NeuroTechUofT"
@@ -201,14 +201,14 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/neurotechuoft"
           github="https://github.com/neurotechuoft"
           instagram="https://www.instagram.com/neurotechuoft/"
-          imageUrl="/rcgs/neurotechuoft.png"
+          imageUrl="/rcgs/neurotechuoft.webp"
         />
         <ProfileCard
           fullName="UTQC"
           position="UofT Quantum Computing Club"
           website="https://linktr.ee/uoft.quantum"
           instagram="https://www.instagram.com/uoft.quantum/"
-          imageUrl="/rcgs/utqcc.png"
+          imageUrl="/rcgs/utqcc.webp"
         />
         <ProfileCard
           fullName="UTRA"
@@ -216,7 +216,7 @@ export default function Community() {
           website="https://www.utra.ca"
           linkedin="https://www.linkedin.com/company/university-of-toronto-robotics-association"
           instagram="https://www.instagram.com/utra_uoft/"
-          imageUrl="/rcgs/utra.png"
+          imageUrl="/rcgs/utra.webp"
         />
         <ProfileCard
           fullName="UTWD"
@@ -225,7 +225,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/uoft-web"
           github="https://github.com/uoftweb"
           instagram="https://www.instagram.com/uoftwebdevclub/"
-          imageUrl="/rcgs/utwd.png"
+          imageUrl="/rcgs/utwd.webp"
         />
         <ProfileCard
           fullName="WHWC"
@@ -240,7 +240,7 @@ export default function Community() {
           website="https://uoftwics.netlify.app/"
           linkedin="https://www.linkedin.com/company/uoftwics/"
           instagram="https://www.instagram.com/uoftwics/"
-          imageUrl="/rcgs/wics.png"
+          imageUrl="/rcgs/wics.webp"
         />
       </ProfileContainer>
 
@@ -253,7 +253,7 @@ export default function Community() {
           website="https://cssc.utm.utoronto.ca"
           github="https://github.com/utm-cssc"
           instagram="https://www.instagram.com/utm.cssc/"
-          imageUrl="/rcgs/cssc.png"
+          imageUrl="/rcgs/cssc.webp"
         />
         <ProfileCard
           fullName="DSC UTM"
@@ -261,7 +261,7 @@ export default function Community() {
           website="https://www.gdscutm.com/"
           github="https://github.com/DSC-UTMap"
           instagram="https://www.instagram.com/gdscutm/"
-          imageUrl="/rcgs/dsc_utsg.png"
+          imageUrl="/rcgs/dsc_utsg.webp"
         />
         <ProfileCard
           fullName="MCSS"
@@ -270,7 +270,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/utmmcss/"
           github="https://github.com/utmmcss"
           instagram="https://www.instagram.com/utmmcss/"
-          imageUrl="/rcgs/mcss.png"
+          imageUrl="/rcgs/mcss.webp"
         />
         <ProfileCard
           fullName="UTM Robotics"
@@ -278,7 +278,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/utmrobotics/"
           github="https://github.com/utmrobotics"
           instagram="https://www.instagram.com/utm_robotics/"
-          imageUrl="/rcgs/utmrobotics.png"
+          imageUrl="/rcgs/utmrobotics.webp"
         />
         <ProfileCard
           fullName="UTMSAM"
@@ -287,7 +287,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/utmsam2020/"
           github="https://github.com/UTM-Society-for-Algorithmic-Modelling"
           instagram="https://www.instagram.com/utmsam/"
-          imageUrl="/rcgs/utmsam.png"
+          imageUrl="/rcgs/utmsam.webp"
         />
         <ProfileCard
           fullName="WiSC"
@@ -295,7 +295,7 @@ export default function Community() {
           website="https://www.wiscutm.ca/"
           linkedin="https://www.linkedin.com/in/wisc-utm-5a2417199/"
           instagram="https://www.instagram.com/wiscutm/"
-          imageUrl="/rcgs/wisc.png"
+          imageUrl="/rcgs/wisc.webp"
         />
       </ProfileContainer>
 
@@ -308,7 +308,7 @@ export default function Community() {
           website="https://www.amacss.org/"
           linkedin="https://www.linkedin.com/company/association-of-mathematical-and-computer-science-students/"
           instagram="https://www.instagram.com/amacss_utsc/"
-          imageUrl="/rcgs/amacss.png"
+          imageUrl="/rcgs/amacss.webp"
         />
         <ProfileCard
           fullName="CSEC"
@@ -317,7 +317,7 @@ export default function Community() {
           linkedin="https://www.linkedin.com/company/computer-science-enrichment-club/about"
           github="https://github.com/csecutsc"
           instagram="https://www.instagram.com/csecutsc/"
-          imageUrl="/rcgs/csec.jpeg"
+          imageUrl="/rcgs/csec.webp"
         />
       </ProfileContainer>
     </InformationPage>

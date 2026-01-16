@@ -5,9 +5,9 @@ import type { Metadata } from "next";
 
 const frontMatter = {
   title: "About",
-  date: "2024-06-16",
+  date: "2026-01-16",
   hideLastModified: false,
-  lastModified: "2025-05-02",
+  lastModified: "2026-01-16",
   summary: "About the Computer Science Student Union",
 };
 
@@ -20,7 +20,12 @@ export default function About() {
   return (
     <InformationPage metadata={frontMatter}>
       {/* Introduction */}
-      <p>
+      <div className="[&_a]:text-blue-400
+                      [&_a]:font-semibold
+                      [&_a]:[text-decoration:underline]
+                      hover:[&_a]:text-blue-500"
+      >
+        <p>
         The Computer Science Student Union (CSSU) represents over 5000 Computer
         Science students who are either taking a Computer Science course or are
         part of a Computer Science program at the University of Toronto St.
@@ -32,6 +37,7 @@ export default function About() {
         CSSU team is to improve the academic, social, and professional lives of
         computer science students. We pursue that goal via:
       </p>
+
       <ul>
         <li>
           <strong>Social Activities</strong>: organizing social events to help
@@ -66,6 +72,7 @@ export default function About() {
         or email us at <a href="mailto:cssu@cdf.toronto.edu">cssu@cdf.toronto.edu</a>.{" "}
         <a href="/ba2250">See Office Hours.</a>
       </p>
+      </div>
 
       {/* Executive Council */}
       <h2>Executive Council</h2>
@@ -144,6 +151,11 @@ export default function About() {
         />
       </ProfileContainer>
 
+      <div className="[&_a]:text-blue-400
+                      [&_a]:font-semibold
+                      [&_a]:[text-decoration:underline]
+                      hover:[&_a]:text-blue-500"
+      >
       {/* General Council */}
       <h2>General Council</h2>
       <p>
@@ -220,6 +232,7 @@ export default function About() {
         </a>
         .
       </p>
+      </div>
     </InformationPage>
   );
 }

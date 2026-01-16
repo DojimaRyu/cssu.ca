@@ -1,9 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+
+// in particular, these are the new packages we require for the FYG GitHub content
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import rehypeRaw from "rehype-raw"; // <-- important
+import rehypeRaw from "rehype-raw"; // <-- important (lol??)
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,12 +17,14 @@ export const metadata: Metadata = {
 export default function FirstYearsGuideToCS() {
   const [markdown, setMarkdown] = useState("");
 
+  // fetch content directly from the GitHub .md file
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/cssu/firstyearguide/main/FYG.md")
       .then((res) => res.text())
       .then((text) => setMarkdown(text));
   }, []);
 
+  // by default, we want to display the guide; if we can't, simply attach the GitHub link for reference
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6">
       <p className="text-xl mb-4">First Year CS Guide</p>
@@ -34,8 +39,8 @@ export default function FirstYearsGuideToCS() {
 
       <div className="prose prose-lg max-w-3xl w-full">
         {markdown ? (
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm]}
+          <ReactMarkdown // <-- to directly add linked content (images)
+            remarkPlugins={[remarkGfm]} // <-- bring in our .md content into HTML
             rehypePlugins={[rehypeRaw]} // <-- enable raw HTML
           >
             {markdown}

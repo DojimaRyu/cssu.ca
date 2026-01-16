@@ -1,3 +1,22 @@
+Last Edit January 14, 2026
+
+##
+
+Hello, everyone!<br>
+If you are here to contribute, thank you for your continued interest in the CSSU - if you are just visiting, then welcome!
+
+In any case, you have reached the CSSU Website GitHub; here, you'll find some quick details about the project, including what dependencies are required, how to run/deploy the project, and what changes are slated for release.<br>
+If you would like to contribute, feel free to fork the project and submit a pull request; let us know and we'll review your changes.
+
+Thanks again!
+<p>
+  <img src="public\people\chud.png" alt="Reaper" width="100" /> <br>
+  Edison Y. <br>
+  Class of 2027, Computer Science Specialist<br>
+  VP of Internal Relations<br>
+</p>
+
+## 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -13,6 +32,17 @@ pnpm dev
 # or
 bun dev
 ```
+
+**Troubleshooting** <br>
+If you are using a Windows device, you may run into the following issue;
+```bash
+npm : File C:\Program Files\nodejs\npm.ps1 cannot be loaded because running scripts is disabled on this system
+... 
+At line:1 char:1 + npm run dev + ~~~ + CategoryInfo : SecurityError: (:) [], PSSecurityException + FullyQualifiedErrorId : UnauthorizedAccess
+```
+* If you get this error or something like it, your issue arises from the current user's `ExecutionPolicy`; either this is undefined or we have not permitted such scripts to run. <br>
+ ** Common fixes may tell you to set modify this attribute; **do not do this, especially if you are going to set it to unrestriced!** This will open up your system to several 
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

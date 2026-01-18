@@ -110,9 +110,9 @@ export default function About() {
       <h2>General Council</h2>
       <p>
         General Council member are volunteers appointed by the Executive Council
-        to assist with our initiatives and be leaders in the community. We have
-        yet to appoint all members of the General Council for the 2025-26
-        academic year. Keep an eye out for updates to the application process.
+        to assist with our initiatives and be leaders in the community. Our 2026 
+        - 2027 roster has been finalized; check out our council members below!
+        
       </p>
       <h2 className ="text-center">Academic Council</h2>
       <ProfileContainer>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HorizontalLogoBlack from "@/../public/horizontal_logo_black.png";
+import HorizontalLogoBlack from "@/../public/horizontal_logo_black.webp";
 
 type EventBannerProps = {
   title: string;

@@ -1,6 +1,7 @@
 import Image from "next-image-export-optimizer";
 
-import CSSULogo from "@/../public/cssu_square.png";
+import CSSULogo from "@/../public/cssu_square.webp";
+import { APP_CONFIG } from "@/config/constants";
 
 export default function Home() {
   return (
@@ -22,13 +23,13 @@ export default function Home() {
                 className="text-[#363636] font-semibold
                                 leading-[1.125] text-5xl text-center lg:text-left"
               >
-                CSSU @ UofT
+                {APP_CONFIG.name}
               </h1>
               <h2
                 className="text-xl font-light leading-tight 
                             text-[#656565] break-words text-center lg:text-left"
               >
-                U of T Computer Science Student Union
+                {APP_CONFIG.fullName}
               </h2>
             </div>
             <div className="block basis-0 grow shrink p-3 text-xl md:ml-[8.33333333%]">

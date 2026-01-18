@@ -3,6 +3,7 @@ import { Open_Sans } from "next/font/google";
 import BackToTop from "@/components/BackToTop";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { APP_CONFIG } from "@/config/constants";
 
 import type { Metadata } from "next";
 
@@ -13,10 +14,10 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 // TODO: OG Image for each page
 export const metadata: Metadata = {
   title: {
-    template: "%s | CSSU @ UofT",
-    default: "CSSU @ UofT",
+    template: `%s | ${APP_CONFIG.name}`,
+    default: APP_CONFIG.name,
   },
-  description: "Computer Science Student Union at the University of Toronto",
+  description: APP_CONFIG.fullName,
 };
 
 export default function RootLayout({

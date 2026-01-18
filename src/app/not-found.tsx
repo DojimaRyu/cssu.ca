@@ -1,6 +1,6 @@
 import Image from "next-image-export-optimizer";
 
-import CSSULogo from "@/../public/cssu_square.png";
+import CSSULogo from "@/../public/cssu_square.webp";
 
 export default function NotFound() {
   return (

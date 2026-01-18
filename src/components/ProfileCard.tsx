@@ -98,7 +98,7 @@ export default function ProfileCard({
               style={{
                 backgroundImage: `url(${
                   process.env.__NEXT_ROUTER_BASEPATH || ""
-                }/cssu_logo.png)`,
+                }/cssu_logo.webp)`,
                 backgroundSize: "105px",
               }}
             >

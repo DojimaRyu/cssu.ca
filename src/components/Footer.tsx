@@ -9,7 +9,14 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-import CSSULogo from "@/../public/cssu_logo.png";
+import CSSULogo from "@/../public/cssu_logo.webp";
+import {
+  FOOTER_SOCIAL_SECTION,
+  FOOTER_SITE_ISSUES_LINK,
+  FOOTER_WORKSPACES_SECTION,
+  MAILCHIMP_CONFIG,
+  type SocialLink,
+} from "@/config/social";
 
 type IconHolderProps = {
   icon: React.ReactNode;
@@ -34,6 +41,28 @@ function IconHolder({ icon, text, href }: IconHolderProps) {
   );
 }
 
+/**
+ * Maps social link icon types to React Icons components
+ */
+function getSocialIcon(iconType: SocialLink["icon"]): React.ReactNode {
+  switch (iconType) {
+    case "email":
+      return <FaEnvelope />;
+    case "facebook":
+      return <FaFacebookF />;
+    case "instagram":
+      return <FaInstagram />;
+    case "linkedin":
+      return <FaLinkedinIn />;
+    case "discord":
+      return <FaDiscord />;
+    case "github":
+      return <FaGithub />;
+    default:
+      return null;
+  }
+}
+
 export default function Footer() {
   return (
     <footer className="pt-12 pb-24 px-6 block text-white bg-black">
@@ -41,7 +70,7 @@ export default function Footer() {
         <div id="mc_embed_signup">
           <form
             // TODO: Clean up this form and make it functional
-            action=""
+            action={MAILCHIMP_CONFIG.formAction}
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
@@ -71,7 +100,7 @@ export default function Footer() {
               <div className="absolute -left-[5000px]" aria-hidden="true">
                 <input
                   type="text"
-                  name="b_c7b34cca67c5aa62532130cbe_e5040d3cd0"
+                  name={MAILCHIMP_CONFIG.hiddenInputName}
                   tabIndex={-1}
                   defaultValue=""
                   control-id="ControlID-2"
@@ -115,29 +144,14 @@ export default function Footer() {
                 <h3>Social Media</h3>
               </div>
               <ul className="leading-10 text-[1.1rem]">
-                <IconHolder
-                  icon={<FaEnvelope />}
-                  text="Email"
-                  href="mailto:cssu@cdf.toronto.edu"
-                />
-                <IconHolder
-                  icon={<FaFacebookF />}
-                  text="Facebook"
-                  href="https://facebook.com/UofTCSSU"
-                />
-                <IconHolder
-                  icon={<FaInstagram />}
-                  text="Instagram"
-                  href="https://instagram.com/uoftcssu"
-                />
-                <IconHolder
-                  icon={<FaLinkedinIn />}
-                  text="LinkedIn"
-                  href={
-                    "https://linkedin.com/company/" +
-                    "computer-science-student-union"
-                  }
-                />
+                {FOOTER_SOCIAL_SECTION.map((link) => (
+                  <IconHolder
+                    key={link.href}
+                    icon={getSocialIcon(link.icon)}
+                    text={link.text}
+                    href={link.href}
+                  />
+                ))}
               </ul>
             </div>
           </div>
@@ -148,16 +162,14 @@ export default function Footer() {
                 <h3>Workspaces</h3>
               </div>
               <ul className="leading-10 text-[1.1rem]">
-                <IconHolder
-                  icon={<FaDiscord />}
-                  text="Discord"
-                  href="https://discord.gg/R9hneMaafD"
-                />
-                <IconHolder
-                  icon={<FaGithub />}
-                  text="Github"
-                  href="https://github.com/cssu"
-                />
+                {FOOTER_WORKSPACES_SECTION.map((link) => (
+                  <IconHolder
+                    key={link.href}
+                    icon={getSocialIcon(link.icon)}
+                    text={link.text}
+                    href={link.href}
+                  />
+                ))}
               </ul>
             </div>
           </div>
@@ -169,15 +181,9 @@ export default function Footer() {
               </div>
               <ul className="leading-10 text-[1.1rem]">
                 <IconHolder
-                  icon={<FaGithub />}
-                  text="Report it on GitHub"
-                  href={
-                    "https://github.com/cssu/cssu.github.io/issues/new" +
-                    "?template=site-issue.yml" +
-                    "&assignees=JasonBarahan,bbayazit16" +
-                    "&labels=bug" +
-                    "&title=[Site%20issue]%20your%20title%20goes%20here"
-                  }
+                  icon={getSocialIcon(FOOTER_SITE_ISSUES_LINK.icon)}
+                  text={FOOTER_SITE_ISSUES_LINK.text}
+                  href={FOOTER_SITE_ISSUES_LINK.href}
                 />
               </ul>
             </div>

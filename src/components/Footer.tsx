@@ -9,7 +9,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 
-import CSSULogo from "@/../public/cssu_logo.png";
+import CSSULogo from "@/../public/cssu_logo.webp";
 
 type IconHolderProps = {
   icon: React.ReactNode;

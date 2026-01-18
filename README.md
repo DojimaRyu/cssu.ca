@@ -10,7 +10,7 @@ If you would like to contribute, feel free to fork the project and submit a pull
 
 Thanks again!
 <p>
-  <img src="public\people\chud.png" alt="Reaper" width="100" /> <br>
+  <img src="public\people\chud.webp" alt="Reaper" width="100" /> <br>
   Edison Y. <br>
   Class of 2027, Computer Science Specialist<br>
   VP of Internal Relations<br>

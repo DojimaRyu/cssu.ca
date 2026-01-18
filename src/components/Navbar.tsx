@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next-image-export-optimizer";
 import { useEffect, useState } from "react";
 
-import CSSULogoHorizontal from "@/../public/horizontal_logo_black.png";
+import CSSULogoHorizontal from "@/../public/horizontal_logo_black.webp";
 
 function MobileNavbarCloseSvg() {
   return (

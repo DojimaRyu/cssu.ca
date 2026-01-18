@@ -11,6 +11,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+       typography: {
+        DEFAULT: {
+          css: {
+            p: {
+              textAlign: "justify",
+            },
+          },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -19,6 +28,7 @@ const config: Config = {
     },
   },
   plugins: [require('@tailwindcss/typography')],
+  
 };
 
 export default config;

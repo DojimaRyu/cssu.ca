@@ -21,12 +21,19 @@ export default function FirstYearsGuideToCS() {
   useEffect(() => {
     fetch("https://raw.githubusercontent.com/cssu/firstyearguide/main/FYG.md")
       .then((res) => res.text())
-      .then((text) => setMarkdown(text));
+      .then((text) => {
+        const withoutFrontmatter = text.replace(
+          /^---[\s\S]*?---\s*/,
+          ""
+        );
+        setMarkdown(withoutFrontmatter);
+      });
+
   }, []);
 
   // by default, we want to display the guide; if we can't, simply attach the GitHub link for reference
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen p-6 ">
       <p className="text-xl mb-4">First Year CS Guide</p>
       <a
         href="https://github.com/cssu/firstyearguide/blob/main/FYG.md"
@@ -37,17 +44,30 @@ export default function FirstYearsGuideToCS() {
         View on GitHub
       </a>
 
-      <div className="prose prose-lg max-w-3xl w-full">
-        {markdown ? (
-          <ReactMarkdown // <-- to directly add linked content (images)
-            remarkPlugins={[remarkGfm]} // <-- bring in our .md content into HTML
-            rehypePlugins={[rehypeRaw]} // <-- enable raw HTML
-          >
-            {markdown}
-          </ReactMarkdown>
-        ) : (
-          <p className="text-xl text-gray-500">Loading guide...</p>
-        )}
+      <div
+        className="
+          prose prose-lg max-w-3xl w-full
+          [&_p]:!text-justify
+          [&_img]:mx-auto
+          [&>a]:block [&>a]:text-center
+
+          [&_h2]:text-2xl
+          [&_h2]:font-bold
+          [&_h2]:mt-8
+          [&_h2]:mb-4
+
+          [&_h3]:text-1xl
+          [&_h3]:font-bold
+          [&_h3]:mt-8
+          [&_h3]:mb-4
+        "
+      >
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          rehypePlugins={[rehypeRaw]}
+        >
+          {markdown}
+        </ReactMarkdown>
       </div>
     </div>
   );

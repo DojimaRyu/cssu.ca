@@ -3,9 +3,16 @@ import ProfileContainer from "@/components/ProfileContainer";
 import ProfileCard from "@/components/ProfileCard";
 import type { Metadata } from "next";
 import {
-  EXECUTIVE_COUNCIL_PROFILES,
+  COPRES_PROFILES,
   VP_PROFILES,
-  VP_SOCIAL_MARKETING_PROFILES,
+  ACADEMIC_PROFILES,
+  EXTERNAL_PROFILES,
+  SOCIAL_PROFILES,
+  FINANCE_PROFILES,
+  STAFF_PROFILES,
+  INTERNAL_PROFILES,
+  MARKETING_PROFILES,
+  TECH_PROFILES
 } from "@/data/profiles";
 import { APP_CONFIG } from "@/config/constants";
 
@@ -89,7 +96,7 @@ export default function About() {
         undergraduate students.
       </p>
       <ProfileContainer>
-        {EXECUTIVE_COUNCIL_PROFILES.map((profile) => (
+        {COPRES_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
@@ -98,17 +105,7 @@ export default function About() {
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
-      <ProfileContainer>
-        {VP_SOCIAL_MARKETING_PROFILES.map((profile) => (
-          <ProfileCard key={profile.fullName} {...profile} />
-        ))}
-      </ProfileContainer>
 
-      <div className="[&_a]:text-blue-400
-                      [&_a]:font-semibold
-                      [&_a]:[text-decoration:underline]
-                      hover:[&_a]:text-blue-500"
-      >
       {/* General Council */}
       <h2>General Council</h2>
       <p>
@@ -117,21 +114,32 @@ export default function About() {
         yet to appoint all members of the General Council for the 2025-26
         academic year. Keep an eye out for updates to the application process.
       </p>
-      {/* <ProfileContainer>
-        <ProfileCard
-          fullName="Vishnu Nittoor"
-          position="Associate, Academic Committee"
-        />
-        <ProfileCard
-          fullName="Andrew Kwok"
-          position="Associate, Academic Committee"
-        />
-        <ProfileCard
-          fullName="Alan Su"
-          position="Associate, Academic Committee"
-        />
-      </ProfileContainer> */}
+      <h2 className ="text-center">Academic Council</h2>
+      <ProfileContainer>
+        {ACADEMIC_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
 
+      <h2 className ="text-center">External Council</h2>
+      <ProfileContainer>
+        {EXTERNAL_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
+
+      <h2 className ="text-center">Social Council</h2>
+      <ProfileContainer>
+        {SOCIAL_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
+
+      <div className="[&_a]:text-blue-400
+                  [&_a]:font-semibold
+                  [&_a]:[text-decoration:underline]
+                  hover:[&_a]:text-blue-500"
+      >
       {/* Office Operations */}
       <h2>Office Operations</h2>
       <p>

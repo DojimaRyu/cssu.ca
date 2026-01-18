@@ -18,6 +18,12 @@ export type ProfileGroup = {
   profiles: ProfileData[];
 };
 
+/*
+The following profiles are for execs and council members; if you don't have all the information, 
+  it's fine - as long as your create a profile with their name, we can handle it.  
+
+TODO: store this online and use an API?  */
+
 // Executive Council Profiles
 export const COPRES_PROFILES: ProfileData[] = [
   {
@@ -189,20 +195,107 @@ export const SOCIAL_PROFILES: ProfileData[] = [
 ];
 
 export const FINANCE_PROFILES: ProfileData[] = [
+  {
+    fullName: "Hrithik Shah",
+    imageUrl: "/people/council/finance/hrithik-s.webp",
+    github: "https://github.com/hrithik-shah",
+    linkedin: "https://www.linkedin.com/in/hrithikshah/"
+  },
+  {
+    fullName: "Clarina Ong"
+  },
+  {
+    fullName: "Mila Bhaloo",
+    imageUrl: "/people/council/finance/mila-b.webp"
+  },
+  {
+    fullName: "Maya Slowikowski",
+    imageUrl: "/people/council/finance/maya-s.webp"
+  },
+  {
+    fullName: "Aditya Menon"
+  },
 ];
 
 export const STAFF_PROFILES: ProfileData[] = [
+  {
+    fullName: "Chenhao Sun",
+    imageUrl: "/people/council/staff/chenhao-s.webp"
+  },
+  {
+    fullName: "Kenny Zheng",
+    imageUrl: "/people/council/staff/kenny-z.webp"
+  },
 ];
 
 export const INTERNAL_PROFILES: ProfileData[] = [
+  {
+    fullName: "Ashley Bi",
+    imageUrl: "/people/council/internal/ashley-b.webp",
+    github: "https://github.com/trashb",
+    linkedin: "https://www.linkedin.com/in/aashley-bi"
+  },
+  {
+    fullName: "Akram Klai",
+    imageUrl: "/people/council/internal/akram-k.webp"
+  },
+  {
+    fullName: "Fatima Ghafoor"
+  },
 ];
 
 export const MARKETING_PROFILES: ProfileData[] = [
+  {
+    fullName: "Chelsey Wang",
+    imageUrl: "/people/council/marketing/chelsey-w.webp"
+  },
+  {
+    fullName: "Kimberly Prijadi",
+    imageUrl: "/people/council/marketing/kimberly-p.webp"
+  },
+  {
+    fullName: "Kerri Wei",
+    imageUrl: "/people/council/marketing/kerri-w.webp"
+  },
+  {
+    fullName: "James Hanzell"
+  },
+  {
+    fullName: "Joyee Jin",
+    imageUrl: "/people/council/marketing/joyee-j.webp"
+  },
+  {
+    fullName: "Amy Yong",
+    imageUrl: "/people/council/marketing/amy-y.webp"
+  }
 ];
 
 export const SPEVENTS_PROFILES: ProfileData[] = [
+  {
+    fullName: "Jerry Zhou"
+  },
+  {
+    fullName: "Yeyun (Sarah) Ko"
+  },
+  {
+    fullName: "Melody Gao"
+  },
+  {
+    fullName: "Pooja Mangra",
+    imageUrl: "/people/council/spevents/pooja-m.webp"
+  }
 ];
 
+export const TECH_LEAD_PROFILE: ProfileData = 
+  {
+    fullName: "Christopher Cao",
+    position: "Tech Team Lead"
+  }
+
 export const TECH_PROFILES: ProfileData[] = [
+  {
+    fullName: "Stanley Cao",
+    position: "Tech Team Associate"
+  },
 ];
 

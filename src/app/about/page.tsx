@@ -12,7 +12,9 @@ import {
   STAFF_PROFILES,
   INTERNAL_PROFILES,
   MARKETING_PROFILES,
-  TECH_PROFILES
+  TECH_PROFILES,
+  SPEVENTS_PROFILES,
+  TECH_LEAD_PROFILE
 } from "@/data/profiles";
 import { APP_CONFIG } from "@/config/constants";
 
@@ -134,6 +136,48 @@ export default function About() {
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
+
+      <h2 className ="text-center">Finance Council</h2>
+      <ProfileContainer>
+        {FINANCE_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
+
+      <h2 className ="text-center">Staff Council</h2>
+      <ProfileContainer>
+        {STAFF_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
+
+      <h2 className ="text-center">Internal Council</h2>
+      <ProfileContainer>
+        {INTERNAL_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
+
+      <h2 className ="text-center">Marketing Council</h2>
+      <ProfileContainer>
+        {MARKETING_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
+
+      <h2 className ="text-center">Special Events Council</h2>
+      <ProfileContainer>
+        {SPEVENTS_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
+
+      <h2 className ="text-center">Tech Team</h2>
+      <ProfileContainer>
+        <ProfileCard {...TECH_LEAD_PROFILE} />
+      </ProfileContainer>
+
+
 
       <div className="[&_a]:text-blue-400
                   [&_a]:font-semibold

@@ -80,7 +80,7 @@ export default function BA2250() {
       </p>
 
       <h2>Schedule (Winter 2026)</h2>
-      <h1><strong>We are still deciding on the schedule; check back later</strong></h1>
+      <h1><strong>We are still deciding on the schedule; check back later!</strong></h1>
       
       <p>
         <em>

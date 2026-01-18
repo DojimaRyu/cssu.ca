@@ -5,6 +5,7 @@ import Image from "next-image-export-optimizer";
 import { useEffect, useState } from "react";
 
 import CSSULogoHorizontal from "@/../public/horizontal_logo_black.webp";
+import { NAVIGATION_LINKS } from "@/config/navigation";
 
 function MobileNavbarCloseSvg() {
   return (
@@ -152,41 +153,14 @@ export default function Navbar() {
             className="items-center lg:items-stretch lg:flex
                     lg:justify-end lg:ml-auto"
           >
-            <NavbarHref
-              setMobileMenuIsOpen={setMobileMenuIsOpen}
-              href="/ba2250/"
-              text="BA2250"
-            />
-            <NavbarHref
-              setMobileMenuIsOpen={setMobileMenuIsOpen}
-              href="/about/"
-              text="About"
-            />
-            <NavbarHref
-              setMobileMenuIsOpen={setMobileMenuIsOpen}
-              href="/community/"
-              text="Community"
-            />
-            <NavbarHref
-              setMobileMenuIsOpen={setMobileMenuIsOpen}
-              href="/posts/student-resources/"
-              text="Resources"
-            />
-            {/* <NavbarHref
-              setMobileMenuIsOpen={setMobileMenuIsOpen}
-              href="/partner-events/"
-              text="Partner Events"
-            />
-            <NavbarHref
-              setMobileMenuIsOpen={setMobileMenuIsOpen}
-              href="/events/"
-              text="Events"
-            /> */}
-            <NavbarHref
-              setMobileMenuIsOpen={setMobileMenuIsOpen}
-              href="/posts/"
-              text="Posts"
-            />
+            {NAVIGATION_LINKS.map((link) => (
+              <NavbarHref
+                key={link.href}
+                setMobileMenuIsOpen={setMobileMenuIsOpen}
+                href={link.href}
+                text={link.text}
+              />
+            ))}
           </div>
         </div>
       </div>

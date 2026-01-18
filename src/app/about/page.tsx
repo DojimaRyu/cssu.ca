@@ -1,7 +1,13 @@
-import InformationPage from "@//components/InformationPage";
-import ProfileContainer from "@//components/ProfileContainer";
-import ProfileCard from "@//components/ProfileCard";
+import InformationPage from "@/components/InformationPage";
+import ProfileContainer from "@/components/ProfileContainer";
+import ProfileCard from "@/components/ProfileCard";
 import type { Metadata } from "next";
+import {
+  EXECUTIVE_COUNCIL_PROFILES,
+  VP_PROFILES,
+  VP_SOCIAL_MARKETING_PROFILES,
+} from "@/data/profiles";
+import { APP_CONFIG } from "@/config/constants";
 
 const frontMatter = {
   title: "About",
@@ -33,7 +39,7 @@ export default function About() {
         the Arts &amp; Science Students&apos; Union, the Department of Computer
         Science, and our union store. The description of the structure, rules,
         and processes of the CSSU are described in our{" "}
-        <a href="/constitution.pdf">constitution</a>. The primary goal of the
+        <a href={APP_CONFIG.constitutionPath}>constitution</a>. The primary goal of the
         CSSU team is to improve the academic, social, and professional lives of
         computer science students. We pursue that goal via:
       </p>
@@ -61,15 +67,15 @@ export default function About() {
         </li>
       </ul>
       <p>
-        You can visit us in room BA2250 in the{" "}
+        You can visit us in room {APP_CONFIG.officeRoom} in the{" "}
         <a
-          href="https://goo.gl/maps/16JTD3pr2KKMkCTE7"
+          href={APP_CONFIG.officeLink}
           target="_blank"
           rel="noopener noreferrer"
         >
           Bahen Centre for Information Technology
         </a>{" "}
-        or email us at <a href="mailto:cssu@cdf.toronto.edu">cssu@cdf.toronto.edu</a>.{" "}
+        or email us at <a href={`mailto:${APP_CONFIG.email}`}>{APP_CONFIG.email}</a>.{" "}
         <a href="/ba2250">See Office Hours.</a>
       </p>
       </div>
@@ -83,72 +89,19 @@ export default function About() {
         undergraduate students.
       </p>
       <ProfileContainer>
-        <ProfileCard
-          fullName="Cynthia Sa"
-          position="Co-President"
-          github="https://github.com/praticodes"
-          linkedin="https://www.linkedin.com/in/cynthia-sa-5776b0192/"
-          imageUrl="/people/CynthiaSa.webp"
-        />
-        <ProfileCard
-          fullName="Pratibha Thakur"
-          position="Co-President"
-          github="https://github.com/praticodes"
-          linkedin="https://www.linkedin.com/in/thakur-pratibha"
-          imageUrl="/people/PratibhaThakur.webp"
-        />
+        {EXECUTIVE_COUNCIL_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
       </ProfileContainer>
       <ProfileContainer>
-        <ProfileCard
-          fullName="Aditya Gautam"
-          position="Treasurer"
-          github="https://github.com/Autumn-AG"
-          linkedin="https://www.linkedin.com/in/adityagautam-ag/"
-          imageUrl=""
-        />
-        <ProfileCard
-          fullName="Yanzhen Chen"
-          github="https://github.com/YheChen"
-          position="VP External"
-          linkedin="https://www.linkedin.com/in/yanzhenchen/"
-          imageUrl="/people/YanzhenChen.webp"
-        />
-        <ProfileCard
-          fullName="Edison Yao"
-          github="https://github.com/DojimaRyu"
-          position="VP Internal"
-          linkedin="https://www.linkedin.com/in/edison-yao/"
-          imageUrl="/people/EdisonYao.webp"
-        />
-        <ProfileCard
-          fullName="Lily Phan"
-          position="VP Academic"
-          github="https://github.com/pH-li"
-          linkedin="https://www.linkedin.com/in/lilyphan48/"
-          imageUrl="/people/LilyPhan.webp"
-        />
+        {VP_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
       </ProfileContainer>
       <ProfileContainer>
-        <ProfileCard
-          fullName="Alisa Iskakova"
-          position="VP Social"
-          github="https://github.com/alisa-isk"
-          linkedin="https://www.linkedin.com/in/alisa-iskakova-b278022b7/"
-          imageUrl="/people/AlisaIskakova.webp"
-        />
-        <ProfileCard
-          fullName="Colleen Chang"
-          position="VP Marketing"
-          github="https://github.com/chexerboxer"
-          linkedin="https://www.linkedin.com/in/colleenxychang/"
-          imageUrl="/people/ColleenChang.webp"
-        />
-        <ProfileCard
-          fullName="Avery Ng"
-          position="VP Special Events"
-          github="https://github.com/avery-jingxin"
-          linkedin="https://www.linkedin.com/in/averyng128/"
-        />
+        {VP_SOCIAL_MARKETING_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
       </ProfileContainer>
 
       <div className="[&_a]:text-blue-400
@@ -182,7 +135,7 @@ export default function About() {
       {/* Office Operations */}
       <h2>Office Operations</h2>
       <p>
-        The CSSU proudly maintains a student lounge in BA 2250 in which students
+        The CSSU proudly maintains a student lounge in {APP_CONFIG.officeRoom} in which students
         can hang out, network, play games, ask questions, and study. We have a variety
         of amenities, including but not limited to free menstrual and safe sex supplies,
         drinks (coffee, tea, hot cocoa and French Vanilla powder), coat racks for the 

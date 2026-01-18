@@ -1,84 +1,17 @@
 import EventCard from "./EventCard";
-
-type EventItem = {
-  eventDirectory: string;
-  mdxFolderPath?: string;
-  frontMatter: {
-    title: string;
-    summary: string;
-    summaryImage?: string;
-  };
-};
+import { EVENTS_DATA, POSTS_DATA, type EventItem } from "@/data/events";
+import { EVENT_CARDS_PER_ROW } from "@/config/constants";
 
 type EventsPageProps = {
   pageType: string;
   pageTitle: string;
 };
 
-// Instead of reading from MD files, we conditionally return data
+/**
+ * Gets the appropriate event/post data based on page type
+ */
 function getAllFrontMatter(pageType: string): EventItem[] {
-  if (pageType === "posts") {
-    return [
-      {
-        eventDirectory: "faq",
-        // For a posts page you might not need mdxFolderPath
-        frontMatter: {
-          title: "Frequently Asked Questions",
-          summary: "Answering your most popular questions!",
-          // Optionally, provide an image filename if needed
-          summaryImage: "faq.jpg",
-        },
-      },
-      {
-        eventDirectory: "resources",
-        frontMatter: {
-          title: "Resources",
-          summary: "List of Resources for CS students",
-          summaryImage: "resources.jpg",
-        },
-      },
-      {
-        eventDirectory: "first-years-guide-to-cs",
-        frontMatter: {
-          title: "First Years Guide to CS",
-          summary: "Everything you need to know for your first year in CS!",
-          summaryImage: "first-year-guide.jpg",
-        },
-      },
-    ];
-  }
-
-  // Otherwise, return your default (or MD-based) data.
-  return [
-    {
-      eventDirectory: "event1",
-      mdxFolderPath: "/events/event1",
-      frontMatter: {
-        title: "Event One",
-        summary: "Summary for event one.",
-        summaryImage: "event1.jpg",
-      },
-    },
-    {
-      eventDirectory: "event2",
-      mdxFolderPath: "/events/event2",
-      frontMatter: {
-        title: "Event Two",
-        summary: "Summary for event two.",
-        summaryImage: "event2.jpg",
-      },
-    },
-    {
-      eventDirectory: "event3",
-      mdxFolderPath: "/events/event3",
-      frontMatter: {
-        title: "Event Three",
-        summary: "Summary for event three.",
-        summaryImage: "event3.jpg",
-      },
-    },
-    // ...other events if needed
-  ];
+  return pageType === "posts" ? POSTS_DATA : EVENTS_DATA;
 }
 
 // Groups an array into subarrays of a given size.
@@ -98,9 +31,8 @@ function mapToImage(mdxFolderPath: string, summaryImage: string) {
 }
 
 export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
-  // Pass the pageType to getAllFrontMatter so it returns the right data.
   const frontMatters = getAllFrontMatter(pageType);
-  const groupedFrontMatters = groupBy(frontMatters, 3);
+  const groupedFrontMatters = groupBy(frontMatters, EVENT_CARDS_PER_ROW);
 
   return (
     <section className="block py-12 px-6 lg:py-36 lg:px-6 fadeIn">

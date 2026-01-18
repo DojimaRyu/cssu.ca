@@ -42,7 +42,13 @@ export const VP_PROFILES: ProfileData[] = [
     position: "Treasurer",
     github: "https://github.com/Autumn-AG",
     linkedin: "https://www.linkedin.com/in/adityagautam-ag/",
-    imageUrl: "",
+    imageUrl: "/people/exec/aditya-g.webp",
+  },
+  {
+    fullName: "Daniel Livshits",
+    position: "VP Staff",
+    github: "https://github.com/DanielLivshits",
+    imageUrl: "/people/exec/daniel-l.webp"
   },
   {
     fullName: "Yanzhen Chen",
@@ -84,6 +90,7 @@ export const VP_PROFILES: ProfileData[] = [
     position: "VP Special Events",
     github: "https://github.com/avery-jingxin",
     linkedin: "https://www.linkedin.com/in/averyng128/",
+    imageUrl: "/people/exec/avery-n.webp"
   },
 ];
 
@@ -147,7 +154,9 @@ export const EXTERNAL_PROFILES: ProfileData[] = [
 export const SOCIAL_PROFILES: ProfileData[] = [
   {
     fullName: "Jenny Bian",
-    imageUrl: "/people/council/social/jenny-b.webp"
+    imageUrl: "/people/council/social/jenny-b.webp",
+    github: "https://github.com/pusheen5000000",
+    linkedin: "https://www.linkedin.com/in/jenny-bian-5a734b394/"
   },
   {
     fullName: "Miray Ozedmir",

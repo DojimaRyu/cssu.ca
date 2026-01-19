@@ -294,7 +294,23 @@ export const TECH_LEAD_PROFILE: ProfileData =
 
 export const TECH_PROFILES: ProfileData[] = [
   {
-    fullName: "Stanley Cao",
+    fullName: "Stanley P.",
+    position: "Tech Team Associate"
+  },
+  {
+    fullName: "Shirley Z.",
+    position: "Tech Team Associate"
+  },
+  {
+    fullName: "Aryan A.",
+    position: "Tech Team Associate"
+  },
+  {
+    fullName: "Rashu S.",
+    position: "Tech Team Associate"
+  },
+  {
+    fullName: "Jason L.",
     position: "Tech Team Associate"
   },
 ];

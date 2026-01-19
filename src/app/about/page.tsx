@@ -176,6 +176,11 @@ export default function About() {
       <ProfileContainer>
         <ProfileCard {...TECH_LEAD_PROFILE} />
       </ProfileContainer>
+      <ProfileContainer>
+        {TECH_PROFILES.map((profile) => (
+          <ProfileCard key={profile.fullName} {...profile} />
+        ))}
+      </ProfileContainer>
 
 
 

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next-image-export-optimizer";
 import HorizontalLogoBlack from "@/../public/horizontal_logo_black.webp";
 
 type EventBannerProps = {
@@ -14,6 +14,7 @@ export default function EventBanner({
   width,
   height,
 }: EventBannerProps) {
+  // Event banners are in cards that are below the fold, so use lazy loading
   if (image && width && height) {
     return (
       <Image
@@ -22,7 +23,8 @@ export default function EventBanner({
         alt={title}
         width={width}
         height={height}
-        priority
+        loading="lazy"
+        basePath={process.env.__NEXT_ROUTER_BASEPATH}
       />
     );
   } else {
@@ -33,7 +35,8 @@ export default function EventBanner({
         alt="CSSU placeholder logo"
         width={3990}
         height={1110}
-        priority
+        loading="lazy"
+        basePath={process.env.__NEXT_ROUTER_BASEPATH}
       />
     );
   }

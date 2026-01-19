@@ -32,7 +32,7 @@ function ProfileImage({
   imageUrl: string;
   fullName: string;
 }) {
-  // Directly render the image using the provided URL.
+  // Profile images are below the fold, so we use lazy loading
   return (
     <div className="min-w-full min-h-full rounded-full">
       <Image
@@ -41,7 +41,8 @@ function ProfileImage({
         className="rounded-full border-none object-cover w-[148px] h-[148px]"
         height={148}
         width={148}
-        priority
+        loading="lazy"
+        basePath={process.env.__NEXT_ROUTER_BASEPATH}
       />
     </div>
   );

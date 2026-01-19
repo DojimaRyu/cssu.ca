@@ -29,7 +29,7 @@ export const COPRES_PROFILES: ProfileData[] = [
   {
     fullName: "Cynthia Sa",
     position: "Co-President",
-    github: "https://github.com/praticodes",
+    github: "https://github.com/cynthiaxsa",
     linkedin: "https://www.linkedin.com/in/cynthia-sa-5776b0192/",
     imageUrl: "/people/exec/CynthiaSa.webp",
   },

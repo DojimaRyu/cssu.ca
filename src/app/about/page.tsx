@@ -116,56 +116,56 @@ export default function About() {
         - 2027 roster has been finalized; check out our council members below!
         
       </p>
-      <h2 className="text-center mt-8">Academic Council</h2>
+      <h2 className="text-center mt-8">Academic Associates</h2>
       <ProfileContainer>
         {ACADEMIC_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className="text-center mt-8">External Council</h2>
+      <h2 className="text-center mt-8">External Associates</h2>
       <ProfileContainer>
         {EXTERNAL_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className="text-center mt-8">Social Council</h2>
+      <h2 className="text-center mt-8">Social Associates</h2>
       <ProfileContainer>
         {SOCIAL_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className="text-center mt-8">Finance Council</h2>
+      <h2 className="text-center mt-8">Finance Associates</h2>
       <ProfileContainer>
         {FINANCE_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className="text-center mt-8">Staff Council</h2>
+      <h2 className="text-center mt-8">Staff Associates</h2>
       <ProfileContainer>
         {STAFF_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className="text-center mt-8">Internal Council</h2>
+      <h2 className="text-center mt-8">Internal Associates</h2>
       <ProfileContainer>
         {INTERNAL_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className="text-center mt-8">Marketing Council</h2>
+      <h2 className="text-center mt-8">Marketing Associates</h2>
       <ProfileContainer>
         {MARKETING_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className="text-center mt-8">Special Events Council</h2>
+      <h2 className="text-center mt-8">Special Events Associates</h2>
       <ProfileContainer>
         {SPEVENTS_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />

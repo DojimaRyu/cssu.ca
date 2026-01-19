@@ -133,8 +133,10 @@ export const ACADEMIC_PROFILES: ProfileData[] = [
     imageUrl: "/people/council/academic/shirley-z.webp",
   },
   {
-    fullName: "York Ngo",
+    fullName: "York Ng",
     imageUrl: "/people/council/academic/york-n.webp",
+    github: "https://github.com/Swithord",
+    linkedin: "https://www.linkedin.com/in/york-hay-ng/"
   },
   {
     fullName: "Enver Chowdhury",

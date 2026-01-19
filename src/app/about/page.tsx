@@ -109,70 +109,70 @@ export default function About() {
       </ProfileContainer>
 
       {/* General Council */}
-      <h2>General Council</h2>
+      <h2 className="mt-12">General Council</h2>
       <p>
         General Council member are volunteers appointed by the Executive Council
         to assist with our initiatives and be leaders in the community. Our 2026 
         - 2027 roster has been finalized; check out our council members below!
         
       </p>
-      <h2 className ="text-center">Academic Council</h2>
+      <h2 className="text-center mt-8">Academic Council</h2>
       <ProfileContainer>
         {ACADEMIC_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">External Council</h2>
+      <h2 className="text-center mt-8">External Council</h2>
       <ProfileContainer>
         {EXTERNAL_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">Social Council</h2>
+      <h2 className="text-center mt-8">Social Council</h2>
       <ProfileContainer>
         {SOCIAL_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">Finance Council</h2>
+      <h2 className="text-center mt-8">Finance Council</h2>
       <ProfileContainer>
         {FINANCE_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">Staff Council</h2>
+      <h2 className="text-center mt-8">Staff Council</h2>
       <ProfileContainer>
         {STAFF_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">Internal Council</h2>
+      <h2 className="text-center mt-8">Internal Council</h2>
       <ProfileContainer>
         {INTERNAL_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">Marketing Council</h2>
+      <h2 className="text-center mt-8">Marketing Council</h2>
       <ProfileContainer>
         {MARKETING_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">Special Events Council</h2>
+      <h2 className="text-center mt-8">Special Events Council</h2>
       <ProfileContainer>
         {SPEVENTS_PROFILES.map((profile) => (
           <ProfileCard key={profile.fullName} {...profile} />
         ))}
       </ProfileContainer>
 
-      <h2 className ="text-center">Tech Team</h2>
+      <h2 className="text-center mt-8">Tech Team</h2>
       <ProfileContainer>
         <ProfileCard {...TECH_LEAD_PROFILE} />
       </ProfileContainer>
@@ -182,12 +182,10 @@ export default function About() {
         ))}
       </ProfileContainer>
 
-
-
       <div className="[&_a]:text-blue-400
                   [&_a]:font-semibold
                   [&_a]:[text-decoration:underline]
-                  hover:[&_a]:text-blue-500"
+                  hover:[&_a]:text-blue-500 mt-12"
       >
       {/* Office Operations */}
       <h2>Office Operations</h2>

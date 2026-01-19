@@ -237,7 +237,9 @@ export const INTERNAL_PROFILES: ProfileData[] = [
   },
   {
     fullName: "Akram Klai",
-    imageUrl: "/people/council/internal/akram-k.webp"
+    imageUrl: "/people/council/internal/akram-k.webp",
+    github: "https://github.com/AkramKlai",
+    linkedin: "https://www.linkedin.com/in/akram-klai-308a54285"
   },
   {
     fullName: "Fatima Ghafoor"

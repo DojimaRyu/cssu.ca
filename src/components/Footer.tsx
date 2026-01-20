@@ -135,6 +135,7 @@ export default function Footer() {
               basePath={process.env.__NEXT_ROUTER_BASEPATH}
               width={400}
               height={400}
+              loading="lazy"
             />
           </div>
 

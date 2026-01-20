@@ -302,8 +302,10 @@ export const TECH_PROFILES: ProfileData[] = [
     position: "Tech Team Associate"
   },
   {
-    fullName: "Shirley Z.",
-    position: "Tech Team Associate"
+    fullName: "Shirley Zhang",
+    position: "Tech Team Associate",
+    github: "https://github.com/shirleyyzhang",
+    linkedin: "https://www.linkedin.com/in/shirleyyaozhang/"
   },
   {
     fullName: "Aryan A.",

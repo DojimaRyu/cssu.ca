@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "A Guide for First Year CS Students!",
 };
 
-export default function FirstYearsGuideToCS() {
+export default function cdFirstYearsGuideToCS() {
   const [markdown, setMarkdown] = useState("");
 
   // fetch content directly from the GitHub .md file

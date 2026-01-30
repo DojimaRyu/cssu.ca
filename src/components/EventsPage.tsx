@@ -36,7 +36,11 @@ export default function EventsPage({ pageType, pageTitle }: EventsPageProps) {
 
   return (
     <section className="block py-12 px-6 lg:py-36 lg:px-6 fadeIn">
-      <div className="section-container">
+      <div
+        className={
+          pageType === "posts" ? "section-container-wide" : "section-container"
+        }
+      >
         <h1 className="title section-title">{pageTitle}</h1>
         <div className="subtitle text-xl text-[#999]"></div>
         <div className="h-[3px] rounded-[50px] bg-black w-[60px]"></div>

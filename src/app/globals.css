@@ -145,6 +145,29 @@ h6 {
   }
 }
 
+/* Wider container for posts/events listing pages */
+.section-container-wide {
+  @apply grow mx-auto my-0 relative w-auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-container-wide {
+    max-width: 1152px;
+  }
+}
+
+@media screen and (min-width: 1216px) {
+  .section-container-wide {
+    max-width: 1344px;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  .section-container-wide {
+    max-width: 1536px;
+  }
+}
+
 .footer-container {
   @apply grow relative w-auto mx-auto my-0 lg:max-w-[960px];
 }

@@ -208,7 +208,9 @@ export const FINANCE_PROFILES: ProfileData[] = [
   },
   {
     fullName: "Mila Bhaloo",
-    imageUrl: "/people/council/finance/mila-b.webp"
+    imageUrl: "/people/council/finance/mila-b.webp",
+    github: "https://github.com/milabhaloo",
+    linkedin: "https://www.linkedin.com/in/mila-bhaloo/"
   },
   {
     fullName: "Maya Slowikowski",
@@ -226,7 +228,9 @@ export const STAFF_PROFILES: ProfileData[] = [
   },
   {
     fullName: "Kenny Zheng",
-    imageUrl: "/people/council/staff/kenny-z.webp"
+    imageUrl: "/people/council/staff/kenny-z.webp",
+    github: "https://github.com/PyneKoyne",
+    linkedin: "https://www.linkedin.com/in/kenny-zheng-june2007/"
   },
 ];
 

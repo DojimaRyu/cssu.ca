@@ -1,5 +1,6 @@
-import Image from "next-image-export-optimizer";
+import ExportedImage from "next-image-export-optimizer";
 
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 import CSSULogo from "@/../public/cssu_square.webp";
 import { APP_CONFIG } from "@/config/constants";
 
@@ -33,8 +34,9 @@ export default function Home() {
               </h2>
             </div>
             <div className="block basis-0 grow shrink p-3 text-xl md:ml-[8.33333333%]">
-              <figure className="block relative">
-                <Image
+              <AnimateOnScroll variant="fade-scale" threshold={0.2}>
+                <figure className="block relative">
+                  <ExportedImage
                   src={CSSULogo}
                   alt="CSSU Logo"
                   className="block h-auto w-full object-contain"
@@ -43,7 +45,8 @@ export default function Home() {
                   height={400}
                   priority
                 />
-              </figure>
+                </figure>
+              </AnimateOnScroll>
             </div>
           </div>
         </div>

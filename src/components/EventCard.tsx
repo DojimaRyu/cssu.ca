@@ -1,5 +1,6 @@
 import Link from "next/link";
 import EventBanner from "./EventBanner";
+import AnimateOnScroll from "./AnimateOnScroll";
 
 type EventCardProps = {
   contentType: string;
@@ -24,8 +25,9 @@ export default function EventCard({
   const url = `/${contentType}/${contentSubdirectory}`;
 
   return (
-    <div className="block basis-0 grow shrink p-3 w-full md:w-1/3 md:flex-none">
-      <div className="bg-white shadow-[0_2px_3px_rgba(10,10,10,0.1),0_0_0_1px_rgba(10,10,10,0.1)] text-[#4a4a4a] block p-5 rounded-md">
+    <AnimateOnScroll variant="fade-up" threshold={0.1}>
+      <div className="block basis-0 grow shrink p-3 w-full md:w-1/3 md:flex-none">
+        <div className="bg-white shadow-[0_2px_3px_rgba(10,10,10,0.1),0_0_0_1px_rgba(10,10,10,0.1)] text-[#4a4a4a] block p-5 rounded-md">
         <figure className="relative w-full h-48 md:h-40 xl:h-64">
           <Link className="w-full h-full" href={url}>
             <EventBanner
@@ -50,5 +52,6 @@ export default function EventCard({
         </div>
       </div>
     </div>
+    </AnimateOnScroll>
   );
 }

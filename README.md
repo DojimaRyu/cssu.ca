@@ -1,4 +1,4 @@
-Last Edit January 19, 2026
+Last Edit: January 23, 2026
 
 ##
 
@@ -71,6 +71,8 @@ If you have previously worked on the website, you may have noticed that I have c
 Much of the content you'll have here can be left as-is; however, certain things like the [Exec/Gen. Council roster](https://www.cssu.ca/about) and the [Constitution](https://sop.utoronto.ca/wp-content/uploads/2025/08/computer-science-students-union-cssu-2025-08-09.pdf) will change as time goes on. 
 
 You should be able to find;
+- The actual raw plaintext content of the website in the `app` folder. Each folder is name dafter its respective page on the website and should be very straightforward to understand.
+  > I will likely refactor those to later be separated from the actual webpages and once again have them put in the `data` folder.
 - Important, *likely constant*, union information such as contact and socials in `src\config`
   1. `navigation.ts` for modifying nav links
   2. `social.ts` for social media links and footer links
@@ -90,6 +92,10 @@ Currently, the website is pretty fast for a Next.js project. This is due to it h
 - **Image Formatting** <br>
   In an ideal world, all image files would be in .webp format. However, this ideal world is obviously not ideal... the proof is left as an exercise to the reader. In any case, our preferred image format here is **in .webp** for reasons of space and load time.
   > I am interested in hosting these image files outside of GitHub and simply retrieving them remotely; this section is subject to change.
+
+  - **Image Compression** <br>
+  In yet another ideal world, our image files would be as small as possible. Once again, this ideal world is not ideal since you'd lose a lot of detail... <br>
+  To find a good balance of this, I have implemented **Huffman's Greedy Image Compression Algorithm** to compress our images after conversion. Is it optimal? According to Nathan Wiebe, yes! Is it the *most optimal*? I don't really know...
 
 - **Image Loading** <br>
   To reduce the load of compiling the website, I have made it so that we do not load all of our image content at once, especially if the user cannot currently view it.

@@ -1,6 +1,33 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+/* =========================== */
+/* === Page View Transitions == */
+/* =========================== */
+@supports (view-transition-name: none) {
+  ::view-transition-old(root) {
+    animation: view-transition-fade-out 0.2s ease-out forwards;
+  }
+  ::view-transition-new(root) {
+    animation: view-transition-fade-in 0.25s ease-out 0.05s both;
+  }
+}
+
+@keyframes view-transition-fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes view-transition-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   @apply bg-white;
 }
@@ -34,6 +61,44 @@ h6 {
 
 .fadeIn {
   animation: fadeIn 150ms ease-out forwards;
+}
+
+/* =========================== */
+/* ==== Scroll Animations ==== */
+/* =========================== */
+.animate-scroll-reveal {
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Hidden states (before in view) */
+.animate-scroll-fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.animate-scroll-fade-in {
+  opacity: 0;
+}
+
+.animate-scroll-fade-scale {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
+.animate-scroll-slide-left {
+  opacity: 0;
+  transform: translateX(32px);
+}
+
+.animate-scroll-slide-right {
+  opacity: 0;
+  transform: translateX(-32px);
+}
+
+/* visible state (when in view) */
+.animate-scroll-reveal.animate-scroll-visible {
+  opacity: 1;
+  transform: translate(0) scale(1);
 }
 
 .navbar-screen {

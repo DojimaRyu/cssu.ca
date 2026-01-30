@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next-image-export-optimizer";
+import ViewTransitionLink from "./ViewTransitionLink";
+import ExportedImage from "next-image-export-optimizer";
 import { useEffect, useState } from "react";
 
 import CSSULogoHorizontal from "@/../public/horizontal_logo_black.webp";
@@ -59,14 +59,14 @@ type NavbarHrefProps = {
 
 function NavbarHref({ href, text, setMobileMenuIsOpen }: NavbarHrefProps) {
   return (
-    <Link
+    <ViewTransitionLink
       href={href}
       className="text-gray-700 block leading-normal relative px-3 py-2 grow-0 shrink-0
             hover:text-black lg:items-center lg:flex"
       onClick={() => setMobileMenuIsOpen(false)}
     >
       {text}
-    </Link>
+    </ViewTransitionLink>
   );
 }
 
@@ -102,12 +102,12 @@ export default function Navbar() {
           className="items-stretch lg:ml-[-0.75rem] shrink-0 min-h-[4rem] flex
                 pr-2 md:pr-0"
         >
-          <Link
+          <ViewTransitionLink
             className="text-[#999] flex leading-normal relative px-3 py-2 grow-0
                         shrink-0 hover:text-black items-center lg:items-center"
             href="/"
           >
-            <Image
+            <ExportedImage
               src={CSSULogoHorizontal}
               alt="CSSU Logo"
               className="max-h-9 h-9"
@@ -116,7 +116,7 @@ export default function Navbar() {
               height={32}
               priority
             />
-          </Link>
+          </ViewTransitionLink>
           <div
             className="text-[#999] leading-normal relative px-3 py-2
                     hover:text-black items-center flex lg:items-center grow shrink"

@@ -1,4 +1,4 @@
-import Image from "next-image-export-optimizer";
+import ExportedImage from "next-image-export-optimizer";
 import React from "react";
 import {
   FaDiscord,
@@ -85,6 +85,8 @@ export default function Footer() {
               >
                 Join Our Mailing List!
               </h3>
+              <h3></h3>
+              
 
               <input
                 type="email"
@@ -92,7 +94,7 @@ export default function Footer() {
                 defaultValue=""
                 className="email"
                 id="mce-EMAIL"
-                placeholder="email address"
+                placeholder="Enter your email address here!"
                 required
                 control-id="ControlID-1"
               />
@@ -128,7 +130,7 @@ export default function Footer() {
 
         <div className="ml-[-0.75rem] mr-[-0.75rem] last:mb-[-0.75rem] md:flex mt-[35px]">
           <div className="block basis-0 grow shrink p-3">
-            <Image
+            <ExportedImage
               src={CSSULogo}
               alt="CSSU Logo"
               className="object-contain"

@@ -1,4 +1,4 @@
-import Image from "next-image-export-optimizer";
+import ExportedImage from "next-image-export-optimizer";
 
 import CSSULogo from "@/../public/cssu_square.webp";
 
@@ -33,7 +33,7 @@ export default function NotFound() {
             </div>
             <div className="block basis-0 grow shrink p-3 text-xl md:ml-[8.33333333%]">
               <figure className="block relative">
-                <Image
+                <ExportedImage
                   src={CSSULogo}
                   alt="CSSU Logo"
                   className="block h-auto w-full object-contain"

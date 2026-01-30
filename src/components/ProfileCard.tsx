@@ -1,5 +1,7 @@
-import Image from "next-image-export-optimizer";
+import ExportedImage from "next-image-export-optimizer";
 import { FaGithub, FaInstagram, FaLinkedin, FaUser } from "react-icons/fa";
+
+import AnimateOnScroll from "./AnimateOnScroll";
 
 function ProfileUrl({
   href,
@@ -35,7 +37,7 @@ function ProfileImage({
   // Profile images are below the fold, so we use lazy loading
   return (
     <div className="min-w-full min-h-full rounded-full">
-      <Image
+      <ExportedImage
         src={imageUrl}
         alt={fullName}
         className="rounded-full border-none object-cover w-[148px] h-[148px]"
@@ -68,8 +70,9 @@ export default function ProfileCard({
   website,
 }: ProfileCardProps) {
   return (
-    <div className="flex flex-wrap justify-center bg-white">
-      <div className="bg-white w-[200px] h-[300px]">
+    <AnimateOnScroll variant="fade-scale" threshold={0.1}>
+      <div className="flex flex-wrap justify-center bg-white">
+        <div className="bg-white w-[200px] h-[300px]">
         <center className="block px-0 py-[9px] h-[44px]">
           {github && (
             <ProfileUrl href={github}>
@@ -117,5 +120,6 @@ export default function ProfileCard({
         </div>
       </div>
     </div>
+    </AnimateOnScroll>
   );
 }

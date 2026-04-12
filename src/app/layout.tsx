@@ -27,6 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="e703a421-0ede-46a1-b81f-c72bd26c654b"
+        ></script>
+      </head>
       <body className={openSans.className}>
         <div className="flex flex-col min-h-screen">
           <header className="top-0 z-50 sticky">

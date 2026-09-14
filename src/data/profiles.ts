@@ -27,41 +27,31 @@ TODO: store this online and use an API?  */
 // Executive Council Profiles
 export const COPRES_PROFILES: ProfileData[] = [
   {
-    fullName: "Cynthia Sa",
+    fullName: "Yanzhen Chen",
     position: "Co-President",
-    github: "https://github.com/cynthiaxsa",
-    linkedin: "https://www.linkedin.com/in/cynthia-sa-5776b0192/",
-    imageUrl: "/people/exec/CynthiaSa.webp",
+    github: "https://github.com/YheChen",
+    linkedin: "https://www.linkedin.com/in/yanzhenchen/",
+    imageUrl: "/people/exec/YanzhenChen.webp",
   },
   {
-    fullName: "Pratibha Thakur",
+    fullName: "Avery Ng",
     position: "Co-President",
-    github: "https://github.com/praticodes",
-    linkedin: "https://www.linkedin.com/in/thakur-pratibha",
-    imageUrl: "/people/exec/PratibhaThakur.webp",
+    github: "https://github.com/avery-jingxin",
+    linkedin: "https://www.linkedin.com/in/averyng128/",
+    imageUrl: "/people/exec/avery-n.webp",
   },
 ];
 
 export const VP_PROFILES: ProfileData[] = [
   {
-    fullName: "Aditya Gautam",
+    fullName: "Eva Verkhovsky",
     position: "Treasurer",
-    github: "https://github.com/Autumn-AG",
-    linkedin: "https://www.linkedin.com/in/adityagautam-ag/",
-    imageUrl: "/people/exec/aditya-g.webp",
+    imageUrl: "/people/council/external/eva-v.webp",
   },
   {
-    fullName: "Daniel Livshits",
-    position: "VP Staff",
-    github: "https://github.com/DanielLivshits",
-    imageUrl: "/people/exec/daniel-l.webp"
-  },
-  {
-    fullName: "Yanzhen Chen",
-    position: "VP External",
-    github: "https://github.com/YheChen",
-    linkedin: "https://www.linkedin.com/in/yanzhenchen/",
-    imageUrl: "/people/exec/YanzhenChen.webp",
+    fullName: "Jordan Shao",
+    position: "VP Academic",
+    imageUrl: "/people/council/academic/jordan-s.webp",
   },
   {
     fullName: "Edison Yao",
@@ -71,32 +61,26 @@ export const VP_PROFILES: ProfileData[] = [
     imageUrl: "/people/exec/EdisonYao.webp",
   },
   {
-    fullName: "Lily Phan",
-    position: "VP Academic",
-    github: "https://github.com/pH-li",
-    linkedin: "https://www.linkedin.com/in/lilyphan48/",
-    imageUrl: "/people/exec/LilyPhan.webp",
+    fullName: "Pranay Chopra",
+    position: "VP External",
+    imageUrl: "/people/council/external/pranay-c.webp",
   },
   {
-    fullName: "Alisa Iskakova",
-    position: "VP Social",
-    github: "https://github.com/alisa-isk",
-    linkedin: "https://www.linkedin.com/in/alisa-iskakova-b278022b7/",
-    imageUrl: "/people/exec/AlisaIskakova.webp",
-  },
-  {
-    fullName: "Colleen Chang",
+    fullName: "Abhirve Munipalle",
     position: "VP Marketing",
-    github: "https://github.com/chexerboxer",
-    linkedin: "https://www.linkedin.com/in/colleenxychang/",
-    imageUrl: "/people/exec/ColleenChang.webp",
   },
   {
-    fullName: "Avery Ng",
+    fullName: "Pooja Mangra",
+    position: "VP Social",
+    imageUrl: "/people/council/spevents/pooja-m.webp",
+  },
+  {
+    fullName: "Shanaya Goel",
+    position: "VP Staff",
+  },
+  {
+    fullName: "Melody Gao",
     position: "VP Special Events",
-    github: "https://github.com/avery-jingxin",
-    linkedin: "https://www.linkedin.com/in/averyng128/",
-    imageUrl: "/people/exec/avery-n.webp"
   },
 ];
 
@@ -107,10 +91,6 @@ export const ACADEMIC_PROFILES: ProfileData[] = [
   {
     fullName: "Mina Wu",
     imageUrl: "/people/council/academic/mina-wu.webp",
-  },
-  {
-    fullName: "Jordan Shao",
-    imageUrl: "/people/council/academic/jordan-s.webp",
   },
   {
     fullName: "Alan Su",
@@ -146,16 +126,8 @@ export const ACADEMIC_PROFILES: ProfileData[] = [
 
 export const EXTERNAL_PROFILES: ProfileData[] = [
   {
-    fullName: "Eva Verkhovsky",
-    imageUrl: "/people/council/external/eva-v.webp"
-  },
-  {
     fullName: "Michelle Huang",
     imageUrl: "/people/council/external/michelle-h.webp"
-  },
-  {
-    fullName: "Pranay Chopra",
-    imageUrl: "/people/council/external/pranay-c.webp"
   },
 ];
 
@@ -281,13 +253,6 @@ export const SPEVENTS_PROFILES: ProfileData[] = [
   {
     fullName: "Yeyun (Sarah) Ko"
   },
-  {
-    fullName: "Melody Gao"
-  },
-  {
-    fullName: "Pooja Mangra",
-    imageUrl: "/people/council/spevents/pooja-m.webp"
-  }
 ];
 
 export const TECH_LEAD_PROFILE: ProfileData = 

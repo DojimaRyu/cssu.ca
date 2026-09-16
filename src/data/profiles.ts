@@ -38,7 +38,7 @@ export const COPRES_PROFILES: ProfileData[] = [
     position: "Co-President",
     github: "https://github.com/avery-jingxin",
     linkedin: "https://www.linkedin.com/in/averyng128/",
-    imageUrl: "/people/exec/avery-n.webp",
+    imageUrl: "/people/exec/avery-n.jpeg",
   },
 ];
 
@@ -46,24 +46,24 @@ export const VP_PROFILES: ProfileData[] = [
   {
     fullName: "Eva Verkhovsky",
     position: "Treasurer",
-    imageUrl: "/people/council/external/eva-v.webp",
+    imageUrl: "/people/exec/eva-v.webp",
   },
   {
     fullName: "Jordan Shao",
     position: "VP Academic",
-    imageUrl: "/people/council/academic/jordan-s.webp",
+    imageUrl: "/people/exec/jordan-s.webp",
   },
   {
     fullName: "Edison Yao",
     position: "VP Internal",
     github: "https://github.com/DojimaRyu",
     linkedin: "https://www.linkedin.com/in/edison-yao/",
-    imageUrl: "/people/exec/EdisonYao.webp",
+    imageUrl: "/people/exec/chud^2.webp",
   },
   {
     fullName: "Pranay Chopra",
     position: "VP External",
-    imageUrl: "/people/council/external/pranay-c.webp",
+    imageUrl: "/people/exec/pranay-c.webp",
   },
   {
     fullName: "Abhirve Munipalle",
@@ -72,7 +72,7 @@ export const VP_PROFILES: ProfileData[] = [
   {
     fullName: "Pooja Mangra",
     position: "VP Social",
-    imageUrl: "/people/council/spevents/pooja-m.webp",
+    imageUrl: "/people/exec/pooja-m.webp",
   },
   {
     fullName: "Shanaya Goel",
@@ -88,205 +88,67 @@ export const VP_PROFILES: ProfileData[] = [
 // General Council Profiles 
 
 export const ACADEMIC_PROFILES: ProfileData[] = [
-  {
-    fullName: "Mina Wu",
-    imageUrl: "/people/council/academic/mina-wu.webp",
-  },
-  {
-    fullName: "Alan Su",
-    imageUrl: "/people/council/academic/alan-s.webp",
-  },
-  {
-    fullName: "Gracie Chen",
-    imageUrl: "/people/council/academic/gracie-c.webp",
-  },
-  {
-    fullName: "Nicole Leung",
-    imageUrl: "/people/council/academic/nicole-l.webp",
-  },
-  {
-    fullName: "Angelina Jiang",
-    imageUrl: "/people/council/academic/angelina-j.webp",
-  },
-  {
-    fullName: "Shirley Zhang",
-    imageUrl: "/people/council/academic/shirley-z.webp",
-  },
-  {
-    fullName: "York Ng",
-    imageUrl: "/people/council/academic/york-n.webp",
-    github: "https://github.com/Swithord",
-    linkedin: "https://www.linkedin.com/in/york-hay-ng/"
-  },
-  {
-    fullName: "Enver Chowdhury",
-    imageUrl: "/people/council/academic/enver-c.webp",
-  }
+ 
 ];
 
 export const EXTERNAL_PROFILES: ProfileData[] = [
-  {
-    fullName: "Michelle Huang",
-    imageUrl: "/people/council/external/michelle-h.webp"
-  },
+
 ];
 
 export const SOCIAL_PROFILES: ProfileData[] = [
   {
-    fullName: "Jenny Bian",
-    imageUrl: "/people/council/social/jenny-b.webp",
-    github: "https://github.com/pusheen5000000",
-    linkedin: "https://www.linkedin.com/in/jenny-bian-5a734b394/"
-  },
-  {
-    fullName: "Miray Ozedmir",
-    imageUrl: "/people/council/social/miray-o.webp"
-  },
-  {
-    fullName: "Kevin Liu",
-    imageUrl: "/people/council/social/kevin-l.webp"
-  },
-  {
-    fullName: "Vineet Koushal",
-    imageUrl: "/people/council/social/vineet-k.webp"
-  },
-  {
-    fullName: "Aaliyah Pirani",
-    imageUrl: "/people/council/social/aaliyah-p.webp"
-  },
-  {
-    fullName: "Angeline How",
-    imageUrl: "/people/council/social/angeline-h.webp"
-  },
-  {
-    fullName: "Jeremy Tam",
-    imageUrl: "/people/council/social/jeremy-t.webp"
-  },
-  {
-    fullName: "Richard Lin",
-    imageUrl: "/people/council/social/richard-l.webp"
+    fullName: "Reena Obmina",
+    position: "Social Associate",
+    github: "https://github.com/rmobmina",
+    linkedin: "https://www.linkedin.com/in/reena-obmina/",
+    imageUrl: "/people/council/social/reenaObmina.webp",
   },
 ];
 
 export const FINANCE_PROFILES: ProfileData[] = [
-  {
-    fullName: "Hrithik Shah",
-    imageUrl: "/people/council/finance/hrithik-s.webp",
-    github: "https://github.com/hrithik-shah",
-    linkedin: "https://www.linkedin.com/in/hrithikshah/"
-  },
-  {
-    fullName: "Clarina Ong"
-  },
-  {
-    fullName: "Mila Bhaloo",
-    imageUrl: "/people/council/finance/mila-b.webp",
-    github: "https://github.com/milabhaloo",
-    linkedin: "https://www.linkedin.com/in/mila-bhaloo/"
-  },
-  {
-    fullName: "Maya Slowikowski",
-    imageUrl: "/people/council/finance/maya-s.webp"
-  },
-  {
-    fullName: "Aditya Menon"
-  },
+
 ];
 
 export const STAFF_PROFILES: ProfileData[] = [
-  {
-    fullName: "Chenhao Sun",
-    imageUrl: "/people/council/staff/chenhao-s.webp"
-  },
-  {
-    fullName: "Kenny Zheng",
-    imageUrl: "/people/council/staff/kenny-z.webp",
-    github: "https://github.com/PyneKoyne",
-    linkedin: "https://www.linkedin.com/in/kenny-zheng-june2007/"
-  },
+  { fullName: "Ziyad Mouftah",
+    position: "Staff Associate",
+    linkedin: "https://www.linkedin.com/in/mouftz/",
+    github: "https://github.com/mouftz",
+    imageUrl: "/people/council/staff/ziyadMouftah.webp"
+  }
 ];
 
 export const INTERNAL_PROFILES: ProfileData[] = [
-  {
-    fullName: "Ashley Bi",
-    imageUrl: "/people/council/internal/ashley-b.webp",
-    github: "https://github.com/trashb",
-    linkedin: "https://www.linkedin.com/in/aashley-bi"
-  },
-  {
-    fullName: "Akram Klai",
-    imageUrl: "/people/council/internal/akram-k.webp",
-    github: "https://github.com/AkramKlai",
-    linkedin: "https://www.linkedin.com/in/akram-klai-308a54285"
-  },
-  {
-    fullName: "Fatima Ghafoor"
-  },
+
 ];
 
 export const MARKETING_PROFILES: ProfileData[] = [
-  {
-    fullName: "Chelsey Wang",
-    imageUrl: "/people/council/marketing/chelsey-w.webp"
+  { fullName: "Justin Yoon",
+    position: "Marketing Associate",
+    linkedin: "https://www.linkedin.com/in/justinyoon95",
+    github: "https://github.com/justinyoon95",
+    imageUrl: "/people/council/marketing/justinYoon.jpg"
   },
-  {
-    fullName: "Kimberly Prijadi",
-    imageUrl: "/people/council/marketing/kimberly-p.webp"
-  },
-  {
-    fullName: "Kerri Wei",
-    imageUrl: "/people/council/marketing/kerri-w.webp"
-  },
-  {
-    fullName: "James Hanzell"
-  },
-  {
-    fullName: "Joyee Jin",
-    imageUrl: "/people/council/marketing/joyee-j.webp"
-  },
-  {
-    fullName: "Amy Yong",
-    imageUrl: "/people/council/marketing/amy-y.webp"
+  { fullName: "Jenny Bian",
+    position: "Marketing Associate",
+    linkedin: "https://www.linkedin.com/in/jennybian/",
+    github: "https://github.com/pusheen5000000",
+    imageUrl: "/people/council/marketing/jennyBian.webp"
   }
 ];
 
 export const SPEVENTS_PROFILES: ProfileData[] = [
-  {
-    fullName: "Jerry Zhou"
-  },
-  {
-    fullName: "Yeyun (Sarah) Ko"
-  },
+ 
 ];
 
+
 export const TECH_LEAD_PROFILE: ProfileData = 
-  {
-    fullName: "Christopher Cao",
-    position: "Tech Team Lead"
-  }
+{
+  fullName: "Christopher Cao",
+  position: "Tech Team Lead"
+}
 
 export const TECH_PROFILES: ProfileData[] = [
-  {
-    fullName: "Stanley P.",
-    position: "Tech Team Associate"
-  },
-  {
-    fullName: "Shirley Zhang",
-    position: "Tech Team Associate",
-    github: "https://github.com/shirleyyzhang",
-    linkedin: "https://www.linkedin.com/in/shirleyyaozhang/"
-  },
-  {
-    fullName: "Aryan A.",
-    position: "Tech Team Associate"
-  },
-  {
-    fullName: "Rashu S.",
-    position: "Tech Team Associate"
-  },
-  {
-    fullName: "Jason L.",
-    position: "Tech Team Associate"
-  },
+ 
 ];
 
